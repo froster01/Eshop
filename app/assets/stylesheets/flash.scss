@@ -1,0 +1,60 @@
+/* app/assets/stylesheets/flash.css */
+
+.flash-container {
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .flash {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    opacity: 0; /* Hidden initially */
+    visibility: hidden; /* Hidden initially */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth fade-in/out */
+  }
+  
+  .flash.active {
+    opacity: 1;
+    visibility: visible;
+  }
+    
+  .flash-primary.flash {
+    background-color: #007bff; /* Bootstrap primary color */
+  }
+  
+  .flash-secondary.flash {
+    background-color: #6c757d; /* Bootstrap secondary color */
+  }
+  
+  .flash-light.flash {
+    background-color: #f8f9fa; /* Bootstrap light color */
+  }
+  
+  .flash-dark.flash {
+    background-color: #343a40; /* Bootstrap dark color */
+  }
+  
+  .flash-danger.flash {
+    background-color: #dc3545; /* Bootstrap danger color */
+  }
+  
+  .flash-info.flash {
+    background-color: #17a2b8; /* Bootstrap info color */
+  }
+  
+  .flash-warning.flash {
+    background-color: #ffc107; /* Bootstrap warning color */
+  }
+  
+  .flash-success.flash {
+    background-color: #28a745; /* Bootstrap success color */
+  }
+    

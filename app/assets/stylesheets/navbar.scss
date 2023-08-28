@@ -1,0 +1,54 @@
+/* Navbar animation */
+.animated-navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.animated-navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile icon animation */
+.profile-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Adjust the positioning of the navbar links */
+.navbar-nav.ml-auto {
+    margin-left: 20%;
+    padding-right: 20px; /* You can adjust this value to control the spacing */
+}
+
+/* Light Theme Styles */
+.light-theme {
+    background-color: gainsboro;
+    color: black;
+
+    .navbar-nav .nav-item.nav-link {
+        color: black;
+
+        .fab,
+        .fas {
+            color: black;
+        }
+    }
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: rgb(27, 37, 41);
+    color: wheat;
+
+    .navbar-nav .nav-item.nav-link {
+        color: wheat;
+
+        .fab,
+        .fas {
+            color: wheat;
+        }
+    }
+}
